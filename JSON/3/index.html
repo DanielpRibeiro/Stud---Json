@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .contato {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Contatos</h1>
+    
+    <!-- Formulário para adicionar novo contato -->
+    <form id="form-contato">
+        <input type="text" id="input-nome" placeholder="Nome" required>
+        <input type="email" id="input-email" placeholder="Email" required>
+        <input type="tel" id="input-telefone" placeholder="Telefone" required>
+        <button type="submit">Adicionar Contato</button>
+    </form>
+    
+    <!-- Lista de contatos -->
+    <div id="lista-contatos"></div>
+    
+    <script src="script.js"></script>
+    </body>
+</html>

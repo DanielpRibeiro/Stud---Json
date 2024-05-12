@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+<!-- O QUE É JSON ?? -->
+
+
+<!-- Imagine que você tem uma caixa de brinquedos com muitos tipos diferentes de brinquedos dentro. Cada brinquedo tem um nome, uma cor
+    e talvez algumas outras coisas que o tornam especial. JSON é como uma maneira organizada de escrever sobre cada brinquedo para que outras pessoas possam entender.
+
+Vamos dizer que um dos seus brinquedos favoritos é um carro de corrida vermelho. Para descrevê-lo usando JSON, você escreveria algo como:
+
+json
+{
+  "nome": "Carro de Corrida",
+  "cor": "Vermelho",
+  "tamanho": "Pequeno"
+}
+Aqui, "nome", "cor" e "tamanho" são como rótulos para ajudar as pessoas a entender o que é cada parte do brinquedo. Eles são chamados de chaves. E o que está entre
+ aspas depois de cada chave é o valor dessa parte do brinquedo. Por exemplo, o valor da chave "cor" é "Vermelho".
+
+Então, se alguém olhar para o JSON, saberá que está descrevendo um brinquedo chamado "Carro de Corrida", que é vermelho e é pequeno.
+
+E é assim que o JSON funciona! É uma maneira organizada e fácil de escrever sobre diferentes coisas, como brinquedos, pessoas, animais ou qualquer outra coisa, para que todos possam entender. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        form {
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        button.remover {
+            background-color: #dc3545;
+        }
+        
+    </style>
+</head>
+<body>
+
+<h1>Lista de Tarefas</h1>
+
+<!-- Formulário para adicionar nova tarefa -->
+<form id="form-tarefa">
+    <input type="text" id="input-tarefa" placeholder="Digite uma nova tarefa" required>
+    <button type="submit">Adicionar Tarefa</button>
+</form>
+
+<!-- Lista de tarefas -->
+<ul id="lista-tarefas"></ul>
+
+<p>Outro exemplo JSON..</p>
+<a href="../3/index.html">Veja aqui - exemplo contatos</a>
+
+<script src="script.js"></script>
+</body>
+</html>
